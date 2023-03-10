@@ -6,32 +6,37 @@ body {
   margin: auto;
   border: 3px solid green;
 }
+.accordion-item{
+  margin-bottom: 20px;
+}
 .mem {
+  padding: 20px;
   border: 1px solid red;
   display: block;
-}
+} 
 img {
   margin-left: 30%;
   margin-right: 50%;
-  border: 3px solid black;
+  border: 1px solid black;
+  border-top: none;
+  display: none;
+  border-top: none;
 }
 
-input {
-  /* position: absolute; */
-  opacity: 0;
-}
-
-.accordion-item {
-  /* position: relative; */
-}
-/* .ral {
+.input {
+/* position: absolute; */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  border: 3px solid green;
-   text-align: right; 
- } */
+  opacity: 0;
+  border: 1px solid blueviolet;
+}
+
+.input:checked ~ img {
+  display: block;
+}
+
+.input:hover ~ img {
+  display: block;
+}
 
 /* img {
   display: hidden;
@@ -39,6 +44,4 @@ input {
   margin-right: auto;
   border: 3px solid green;
 }
-img:hover {
-  display: block;
-} */
+
