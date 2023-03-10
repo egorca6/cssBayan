@@ -1,0 +1,44 @@
+body {
+  background-color: aquamarine;
+}
+.wrapper {
+  max-width: 50%;
+  margin: auto;
+  border: 3px solid green;
+}
+.mem {
+  border: 1px solid red;
+  display: block;
+}
+img {
+  margin-left: 30%;
+  margin-right: 50%;
+  border: 3px solid black;
+}
+
+input {
+  /* position: absolute; */
+  opacity: 0;
+}
+
+.accordion-item {
+  /* position: relative; */
+}
+/* .ral {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: 3px solid green;
+   text-align: right; 
+ } */
+
+/* img {
+  display: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid green;
+}
+img:hover {
+  display: block;
+} */
