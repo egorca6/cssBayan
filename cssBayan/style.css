@@ -4,17 +4,31 @@ body {
 .wrapper {
   max-width: 50%;
   margin: auto;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 .accordion-item {
   margin-bottom: 0px;
   overflow: hidden;
   border-top: 1px solid red;
+  
 }
+.wrapper:hover, .accordion-item:hover, .accordion:hover, .close:hover, .input:hover, .mem:hover {
+  cursor: pointer;
+}
+.accordion:hover{
+  /* cursor: pointer; */
+  /* display: flex;
+flex-direction: column; */
+} 
 .mem {
   padding: 1.5em;
   /* border-top: 1px solid red; */
-  display: block;
+  /* display: block; */
+  display: flex;
+align-items: flex-start;
+justify-content: space-between;
+/* flex-wrap: nowrap; */
+/* height: 250px; */
   max-height: 0;
 }
 img {
@@ -31,7 +45,7 @@ img {
   /* position: absolute; */
   display: block;
   opacity: 0;
-  border: 1px solid blueviolet;
+  border: 10px solid #ffffff;
 }
 
 .input:checked ~ img {
@@ -43,10 +57,11 @@ img {
   transition-timing-function: ease-in-out;
   max-height: 19em;
   overflow: visible;
+
 }
 
 .close {
-  margin-left: 95%;
+  /* margin-left: 95%; */
   margin-top: 0;
   background: none; 
  padding-top: 0%;
@@ -54,11 +69,14 @@ img {
   /* background: none; */
   display: inline-block;
   transition: transform 0.4s ease-in-out;
+ 
 }
 
-.input:hover + .close {
+.accordion-item:hover .close {
   transform: rotate(90deg);
-   
+  transition-timing-function: ease-in-out;
+  max-height: 20em;
+  
 }
 h1{
   max-width: 50%;
