@@ -1,0 +1,151 @@
+body {
+  background-color: aquamarine;
+    font-size: 1.5em;
+}
+
+a{
+  color: blue;
+  text-decoration: none;
+}
+
+.wrapper {
+   max-width: 50%;
+  margin: auto; 
+}
+
+.accordion-item {
+  overflow: hidden;
+  border-top: 0.1em solid gray;
+}
+
+.mem {
+  padding: 1.5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-height: 0;
+}
+img {
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+  max-height: 0 ;
+  padding-bottom: 1em;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+
+
+.input {
+  display: block;
+  opacity: 0;
+  border: 10px solid #ffffff;
+}
+
+.input:checked ~ img {
+  transition-timing-function: ease-in-out;
+  max-height: 19em;
+}
+
+.close {
+  margin-top: 0;
+  background: none; 
+  padding-top: 0%;
+  border: 0;
+  display: inline-block;
+  transition: transform 0.4s ease-in-out;
+  opacity: 0;
+}
+
+
+input:checked ~ label .close {
+  transform: rotate(90deg);
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+  
+}
+
+
+input:checked ~ label {
+  color: black;
+}
+
+h1{
+  max-width: 50%;
+  margin: auto;
+  color: black;
+}
+/* for Mobile  320x568*/
+@media only screen and (max-width: 320px) {
+  
+  body {
+    font-size: 1em;
+  }
+  .wrapper {
+    max-width: 100%;
+   margin: auto; 
+  
+ }
+ img {
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+
+}
+.mem {
+  padding: 2.5em;
+  display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+}
+/* tablet 820x1180*/
+@media only screen and (min-width: 320px) and (max-width:820px) {
+  
+  body {
+    font-size: 1em;
+  }
+
+  .wrapper {
+    max-width: 95%;
+   margin: auto; 
+  
+ }
+ img {
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+}
+}
+
+@media (hover: hover) {
+  .accordion:hover button {
+    color: black;
+  }
+  
+  .accordion:hover  label{
+    color: black;
+  } 
+  
+  .accordion-item:hover .close {
+    transform: rotate(90deg);
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  .accordion:hover .close{
+    opacity: 1;
+  }
+
+  .input:hover ~ img {
+    transition-timing-function: ease-in-out;
+    max-height: 19em;
+    overflow: visible;
+  
+  } 
+  .wrapper:hover, .accordion-item:hover, .accordion:hover, .close:hover, .input:hover, .mem:hover {
+    cursor: pointer;
+    
+  }
+}
