@@ -63,7 +63,7 @@ img {
 input:checked ~ label .close {
   transform: rotate(90deg);
   transition-timing-function: ease-in-out;
-  opacity: 1;
+  opacity: 0;
   
 }
 
